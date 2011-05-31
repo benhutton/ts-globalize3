@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
 
   {
     'rspec'         => '~> 2.6.0',
+    'cucumber'      => '~> 0.10.3',
     'rake'          => '0.8.7'
   }.each do |lib, version|
     s.add_development_dependency lib, version
