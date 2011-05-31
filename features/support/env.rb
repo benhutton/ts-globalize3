@@ -12,5 +12,4 @@ require 'cucumber/thinking_sphinx/internal_world'
 world = Cucumber::ThinkingSphinx::InternalWorld.new
 world.configure_database
 
-
 world.setup
