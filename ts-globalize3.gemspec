@@ -22,7 +22,8 @@ Gem::Specification.new do |s|
   {
     'rspec'         => '~> 2.6.0',
     'cucumber'      => '~> 0.10.3',
-    'rake'          => '0.8.7'
+    'rake'          => '0.8.7',
+    'mysql'        => '2.8.1'
   }.each do |lib, version|
     s.add_development_dependency lib, version
   end
