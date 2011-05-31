@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   {
-    'rspec'         => '~> 2.6.0'
+    'rspec'         => '~> 2.6.0',
+    'rake'          => '0.8.7'
   }.each do |lib, version|
     s.add_development_dependency lib, version
   end
