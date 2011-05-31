@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "ts-globalize3/version"
+require "thinking_sphinx/globalize3/version"
 
 Gem::Specification.new do |s|
   s.name        = "ts-globalize3"
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   {
     'globalize3'         => '~> 0.1.0',
-    'thinking_sphinx'    => '~> 2.0.5'
+    'thinking-sphinx'    => '~> 2.0.5'
   }.each do |lib, version|
     s.add_runtime_dependency lib, version
   end
