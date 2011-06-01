@@ -23,12 +23,20 @@ Feature: Indexing Translations
     Then I should get 1 result
 
     When I search for "Deseando Dios"
-    Then I should get 0 result
+    Then I should get 1 result
 
     When I filter by es on locale
+
+    When I search for "Desiring God"
+    Then I should get 1 result
+
+    When I search for "Deseando Dios"
+    Then I should get 1 result
+
+    When I filter by fr on locale
 
     When I search for "Desiring God"
     Then I should get 0 result
 
     When I search for "Deseando Dios"
-    Then I should get 1 result
+    Then I should get 0 result
