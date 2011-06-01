@@ -32,6 +32,7 @@ end
 When /^I search for "([^"]*)"$/ do |query|
   @results = nil
   @query = query
+  # debugger; true
 end
 
 When /^I filter by (\w+) on (\w+)$/ do |filter, attribute|
