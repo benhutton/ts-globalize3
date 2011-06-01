@@ -14,7 +14,7 @@ require 'database_cleaner'
 require 'database_cleaner/cucumber'
 DatabaseCleaner.strategy = :truncation
 
-$:.unshift File.dirname(__FILE__) + '/../../lib'
+require File.dirname(__FILE__) + '/../../lib/thinking_sphinx/globalize3.rb'
 
 require 'cucumber/thinking_sphinx/internal_world'
 world = Cucumber::ThinkingSphinx::InternalWorld.new
