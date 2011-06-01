@@ -23,7 +23,9 @@ Gem::Specification.new do |s|
     'rspec'         => '~> 2.6.0',
     'cucumber'      => '~> 0.10.3',
     'rake'          => '0.8.7',
-    'mysql'        => '2.8.1'
+    'mysql'        => '2.8.1',
+    'ruby-debug19' => '~> 0.11.6',
+    'database_cleaner' => nil
   }.each do |lib, version|
     s.add_development_dependency lib, version
   end

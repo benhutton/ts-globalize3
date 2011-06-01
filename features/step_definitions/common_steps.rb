@@ -17,6 +17,11 @@ Given "Sphinx is running" do
 end
 
 Given /^I am searching on (.+)$/ do |model|
+  Dir["#{Dir.pwd}/features/thinking_sphinx/db/fixtures/*.rb"].sort!.each do |file|
+    load file
+  end
+  ThinkingSphinx::Configuration.instance.controller.index
+  sleep(0.25)
   @model = model.gsub(/\s/, '_').singularize.camelize.constantize
 end
 
@@ -31,7 +36,7 @@ end
 
 When /^I filter by (\w+) on (\w+)$/ do |filter, attribute|
   @results = nil
-  @with[attribute.to_sym] = filter.to_i
+  @with[attribute.to_sym] = filter.to_crc32
 end
 
 Then /^I should get (\d+) results?$/ do |count|

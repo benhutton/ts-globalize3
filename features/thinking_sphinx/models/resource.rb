@@ -2,6 +2,8 @@ class Resource < ActiveRecord::Base
   translates :name
 
   define_index do
-    indexes :name
+    indexes translations.name
+
+    has translations.locale
   end
 end

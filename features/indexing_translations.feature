@@ -1,3 +1,4 @@
+@no-txn
 Feature: Indexing Translations
   In order to search translated websites
   Developers
