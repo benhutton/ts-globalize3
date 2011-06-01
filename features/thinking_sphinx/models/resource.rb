@@ -1,5 +1,7 @@
 class Resource < ActiveRecord::Base
+  translates :name
+
   define_index do
-    indexes :name, :sortable => true
+    indexes :name
   end
 end

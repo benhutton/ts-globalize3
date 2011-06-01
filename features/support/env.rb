@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler'
 Bundler.setup
 
+require 'globalize3'
 require 'thinking_sphinx'
 require 'active_record'
 ActiveRecord::Base.send(:include, ThinkingSphinx::ActiveRecord)

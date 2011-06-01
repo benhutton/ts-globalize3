@@ -16,7 +16,7 @@ Feature: Indexing Translations
     Given Sphinx is running
     And I am searching on resources
 
-    When I filter by locale on en
+    When I filter by en on locale
 
     When I search for "Desiring God"
     Then I should get 1 result
@@ -24,7 +24,7 @@ Feature: Indexing Translations
     When I search for "Deseando Dios"
     Then I should get 0 result
 
-    When I filter by locale on es
+    When I filter by es on locale
 
     When I search for "Desiring God"
     Then I should get 0 result

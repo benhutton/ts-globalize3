@@ -29,6 +29,11 @@ When /^I search for "([^"]*)"$/ do |query|
   @query = query
 end
 
+When /^I filter by (\w+) on (\w+)$/ do |filter, attribute|
+  @results = nil
+  @with[attribute.to_sym] = filter.to_i
+end
+
 Then /^I should get (\d+) results?$/ do |count|
   results.length.should == count.to_i
 end
